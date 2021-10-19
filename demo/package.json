@@ -1,0 +1,35 @@
+{
+  "name": "eslint-website-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The codebase for the ESLint Demo (eslint.org/demo)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --port 8080 --open"
+  },
+  "dependencies": {
+    "bootstrap.native": "^4.0.6",
+    "codemirror": "^5.63.1",
+    "core-js": "^3.18.2",
+    "eslint": "^7.32.0",
+    "less": "^4.1.2",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "regenerator-runtime": "^0.13.9",
+    "socket.io-client": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "less-loader": "^10.0.1",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
