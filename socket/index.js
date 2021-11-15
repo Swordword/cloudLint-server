@@ -19,6 +19,7 @@ io.on('connection',(socket) =>{
   io.emit('refreshClientConfig',JSON.stringify({}))
   socket.on('updateServerConfig',(config)=>{
     console.log('server updateServerConfig');
+    // 存储config，并同步至数据库
     io.emit('refreshClientConfig',config)
   })
   io.on('disconnect',()=>{
@@ -27,6 +28,6 @@ io.on('connection',(socket) =>{
 })
 
 server.listen(8000, () => {
-  console.log('ESLint Server is running at http://localhost:8000')
+  console.log('ESLint Socket Server is running at http://localhost:8000')
 })
 
